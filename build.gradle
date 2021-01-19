@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        jcenter(){url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'https://dl.bintray.com/martinqaq/maven' }
+//        maven { url 'https://dl.bintray.com/fanny/maven' }
+        maven { url'https://jitpack.io'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.3'
+
+        classpath 'com.novoda:bintray-release:0.9.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        jcenter(){url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+        maven { url 'https://dl.bintray.com/martinqaq/maven' }
+//        maven { url 'https://dl.bintray.com/fanny/maven' }
+        maven { url'https://jitpack.io'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+tasks.getByPath(":mylibrary:javadocRelease").enabled = false
+//tasks.getByPath(":base:javadocRelease").enabled = false
