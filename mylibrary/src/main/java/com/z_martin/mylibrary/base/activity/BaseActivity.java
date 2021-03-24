@@ -149,7 +149,7 @@ public abstract class BaseActivity extends SupportActivity implements LifecycleP
      */
     protected void onBeforeBind() {}
 
-    private boolean isSetScreen = false;
+    private boolean isSetScreen = true;
     public void setSetScreen(){
         this.isSetScreen = false;
     }

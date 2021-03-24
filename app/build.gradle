@@ -60,9 +60,9 @@ dependencies {
     implementation 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
 
-    implementation 'com.z_martin:mylibrary:3.0.0'
+//    implementation 'com.z_martin:mylibrary:3.0.0'
 //    implementation project(path: ':base')
 //    implementation 'com.z_martin:base:1.5.0'
-//    implementation project(path: ':mylibrary')
+    implementation project(path: ':mylibrary')
     
 }

@@ -19,12 +19,14 @@ public class ScreenUtil {
         //绘制页面时参照的设计图尺寸
 //        final float DESIGN_WIDTH = 375f;
 //        final float DESIGN_HEIGHT = 667f;
-        final float DESIGN_WIDTH = 800f;
-        final float DESIGN_HEIGHT = 1280f;
+//        final float DESIGN_WIDTH = 800f;
+//        final float DESIGN_HEIGHT = 1280f;
+        final float DESIGN_WIDTH = 726f;
+        final float DESIGN_HEIGHT = 1024f;
         final float DESTGN_INCH = 5.0f;
         //大屏调节因子，范围0~1，因屏幕同比例放大视图显示非常傻大憨，用于调节感官度
 //        final float BIG_SCREEN_FACTOR = 0.8f;
-        final float BIG_SCREEN_FACTOR = 1f;
+        final float BIG_SCREEN_FACTOR = 0.8f;
 
         DisplayMetrics dm = context.getResources().getDisplayMetrics();
 

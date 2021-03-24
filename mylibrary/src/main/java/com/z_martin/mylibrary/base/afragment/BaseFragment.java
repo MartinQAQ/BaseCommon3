@@ -3,7 +3,6 @@ package com.z_martin.mylibrary.base.afragment;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,7 +22,6 @@ import com.z_martin.mylibrary.base.app.BaseApp;
 import com.z_martin.mylibrary.base.app.InjectManager;
 import com.z_martin.mylibrary.utils.AppUtils;
 import com.z_martin.mylibrary.utils.LoadingDialog;
-import com.z_martin.mylibrary.utils.StatusBarUtils;
 import com.z_martin.mylibrary.utils.ToastUtils;
 
 import androidx.annotation.CheckResult;
@@ -113,8 +111,8 @@ public abstract class BaseFragment extends SwipeBackFragment implements IBaseFra
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         lifecycleSubject.onNext(FragmentEvent.CREATE_VIEW);
-        StatusBarUtils.setColor(getActivity(), R.color.black, 255);
-        mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+//        StatusBarUtils.setColor(getActivity(), R.color.black, 255);
+//        mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         getBundle(getArguments());
         onBeforeBind();
         initData(view);
